@@ -36,6 +36,9 @@ class Card:
         self.suit = suit
         self.name = name
 
+    def __repr__(self):
+        return f'<Card rank={self.rank} suit={self.suit} name={self.name}>'
+
 
 class Cardset:
     """Simple card set class. Frequently for internal uses.
